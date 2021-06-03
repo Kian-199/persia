@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persian food</title>
+    <!-- <link rel="stylesheet" href="stylePersian.css"> -->
+    <style>
+*{
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    font-family: sans-serif;
+    /* background-color: black; */
+}
+nav{
+    text-align: right;
+    width: 96%;
+    margin: 10px auto;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	text-decoration: none;
+	/* color: blue; */
+    color: white;
+	font-size: 20px;
+    margin: 0px auto;
+    letter-spacing: 1px;
+    margin: 2px;
+}
+nav ul{
+	border: 2px solid blue;
+	background: blue;
+	border-radius: 50px 25px;
+    margin-left: 1025px;
+    padding-left: 22px;
+	color: white;
+}
+.main-h2{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 130px;
+    font-style: italic;
+    background: url(./images/persianFood.jpg);
+    background-position: center;
+    background-size: cover;
+    color: aqua;
+    text-transform: uppercase;
+    border: 2px solid blue;
+    padding: 100px;
+    margin: 25px;
+    border-radius: 25px;
+}
+.main-h2:active{
+    opacity: 0.3;
+    color: blue;
+    transform: skew(25deg);
+}
+.foods{
+    text-align: center;
+    font-style: italic;
+    color: blue;
+    font-size: 42px;    
+}
+.breakfast-persian1{
+    text-align: left;
+    margin: 25px;
+    font-size: medium;
+}
+.section-left-breakfast{
+    border: 5px double black;
+    height: 20vw;
+    border-left: none;
+    border-right: none;
+    margin-right: 65vw;
+    margin-left: 25px;
+    text-align: left;
+    overflow: visible;
+    line-height: 25px;
+    text-align: justify;
+    font-size: large;
+    
+}
+.section-right-breakfast{
+    border: 2px solid black;
+    height: 30vw;
+    margin-top: 0px;
+    margin-left: 60%;
+    text-align: right;
+    margin-right: 25px;
+    background-image: url(./images/adasi.jpg);
+    /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fmealz.com%2Frecipes%2Fmyfatmeania-adasi-persian-lentil-stew-1&psig=AOvVaw1w0yBSYP7UgrS5MqNCvfyO&ust=1603898273088000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNCQm-6I1ewCFQAAAAAdAAAAABAD); */
+    background-position: center;
+    background-size: cover;
+}
+.section-left-lunch{
+    border: 5px double black;
+    height: 20%;
+    border-left: none;
+    border-right: none;
+    margin-right: 65vw;
+    margin-left: 25px;
+    text-align: left;
+    overflow: visible;
+    line-height: 25px;
+    text-align: justify;
+    font-size: large;
+}
+.section-right-lunch{
+    border: 2px solid black;
+    height: 30vw;
+    width: auto;
+    margin-left: 60%;
+    text-align: right;
+    margin-right: 25px;
+    background-image: url(./images/kalamPolo.jpg);
+    /* background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Ftr2p.com%2Fblog-post.aspx%3Fid%3D20163&psig=AOvVaw00Ah_8icbVb8orWLl6s2uf&ust=1603898329740000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOiqmIeJ1ewCFQAAAAAdAAAAABAD); */
+    background-position: center;
+    background-size: cover;
+}
+.section-left-dinner{
+    border: 5px double black;
+    height: auto;
+    border-left: none;
+    border-right: none;
+    margin-right: 65vw;
+    margin-left: 25px;
+    text-align: left;
+    overflow: visible;
+    line-height: 25px;
+    text-align: justify;
+    font-size: large;
+}
+.section-right-dinner{
+    border: 2px solid black;
+    height: 30vw;
+    margin-left: 60%;
+    text-align: right;
+    margin-right: 25px;
+    background-image: url(./images/kashkeBademjan.jpg);
+    /* background-image: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fashhang.com%2Fwp-content%2Fuploads%2F2018%2F07%2F%25D8%25AD%25D9%2584%25DB%258C%25D9%2585-%25D8%25A8%25D8%25A7%25D8%25AF%25D9%2585%25D8%25AC%25D8%25A7%25D9%2586.jpg&imgrefurl=https%3A%2F%2Fashhang.com%2Fproduct%2F%25DA%25A9%25D8%25B4%25DA%25A9-%25D8%25A8%25D8%25A7%25D8%25AF%25D9%2585%25D8%25AC%25D8%25A7%25D9%2586%2F&tbnid=ZP-_DVj1ApmAnM&vet=12ahUKEwi9x9uWiNXsAhWX4oUKHfqJB84QMygGegUIARDuAQ..i&docid=rTT4Y8n4OU6k4M&w=1240&h=800&q=%DA%A9%D8%B4%DA%A9%20%D8%A8%D8%A7%D8%AF%D9%85%D8%AC%D8%A7%D9%86&ved=2ahUKEwi9x9uWiNXsAhWX4oUKHfqJB84QMygGegUIARDuAQ); */
+    background-position: center;
+    background-size: cover;
+}
+footer{
+    border: 2px solid blue;
+    background-color: blue;
+    margin-top: 25px;
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    border-radius: 25px 25px 0 0; /* top-left/top-right*/
+}
+.address{
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    margin-top: 8px;
+}
+.Breakfast:active{
+    transform: skew(25deg);
+    color: red;
+}
+.Lunch:active{
+    transform: skew(25deg);
+    color: red;
+}
+.Dinner:active{
+    transform: skew(25deg);
+    color: red;
+}
+
+
+    </style>
+</head>
+<body>
+  <div class="main-div"> 
+      <nav>
+            <ul>
+                <li>
+                   <a href="#breakfast">breakfast</a> 
+                </li>
+                <li>
+                    <a href="#lunch">lunch</a>
+                </li>
+                <li>
+                    <a href="#dinner">dinner</a>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="main-h2"> 
+            Persian food Gallery
+        <!-- <img src="./images/persianFood.jpg" alt="persianFood"> -->
+        </h2>
+       
+  
+        <div class="foods">
+        <div class="section-title">
+            
+            <p class="Breakfast" name="breakfast">Breakfast</p>
+            <p style="text-align: center;border: 1px groove;background: blue;color: white;border-radius:50px 25px;">Adasi</p>
+            <a name="breakfast"></a>
+            <div>
+            <section class="section-breakfast">
+                <section class="section-left-breakfast">
+                <p>
+                Making Adasi for 5 people and the vital material<br>
+                200 g lentils for 5 people <br>
+                Rice 50 g<br>
+                1 liter of water<br>
+                1. Wet the lentils<br>
+                2- We make hot onions<br>
+                3. Pour the lentils in the pressure cooker<br>
+                4. Add the hot onion<br>
+                5. Add a quarter of the rice to the lentils<br>
+                6. Add a liter of water, then let it settle.
+            </p>
+        </section>
+                <section class="section-right-breakfast">
+                    <!-- <img src="./images/adasi.jpg" alt="Adasi"> -->
+                </section>
+            </section>
+            
+            </div>
+        </div>
+        <div>
+            
+            <p class="Lunch" name="lunch">Lunch</p>
+            <p style="text-align: center;border: 1px groove;background: blue;color: white;border-radius: 50px 25px;">Kalam polo</p>
+            <a name="lunch"></a>
+            <div>
+            <section class="section-lunch">
+                <section class="section-left-lunch">
+                    <p>
+                orders and the vital materials for making kalam polo shiraz <br>
+                Minced meat 300 g<br>
+                one white cabbage<br>
+                One kilo of rice<br><br>
+
+                1- First, soak the rice <br>
+                2- Then peel the kale and chop them finely. Chop the cleaned vegetables for the cabbage.<br>
+                3. Fry the chopped words in a suitable pan with some oil.<br>
+                4. In a suitable pot, pour some water and half a tablespoon of turmeric jam, and after the water reaches boiling temperature, add the rice to the boiling water, and after a few minutes, drain the rice. Then put the desired crease in the bottom of the pot and mix the rice with cabbage and vegetables and pour in the pot.<br>
+                5. Cover the pot with a saucepan and place on the pot and turn down the heat to simmer the rice. In the next step, pour the minced meat in a suitable dish and then grate the onion on the meat with fine ribs and add chickpea flour along with pepper, turmeric and salt to the meat.<br>
+                6. Knead the minced meat mixture well. Then cut the minced meat mixture into small dumplings. Pour some oil in a suitable pan and fry the meatballs in oil. Then place the fried meatballs in the middle of the pilaf to cook with the pilaf.
+                </p>
+                </section>
+                <section class="section-right-lunch">
+                    <!-- <img src="./images/kalamPolo.jpg" alt="kalamPolo"> -->
+                </section>
+            </section>
+        </div>
+        </div>
+        <div>
+            
+            <p class="Dinner" name="dinner">Dinner</p>
+            <p style="text-align: center;border: 1px groove;background: blue;color: white;border-radius:50px 25px;">Kashkeh bademjan</p>
+            <a name="dinner"></a>
+        <div>
+            <section class="section-dinner">
+                <section class="section-left-dinner">
+                    <p>
+                        orders for making kashkeh bademjan<br>
+                        Eggplant 5 pcs<br>
+                        4 walnuts<br>
+                        Onion 1 clove garlic 5 cloves<br>
+                        Whey 40 grams of salt and pepper as needed<br>
+                        Dried mint 2 tbsp<br>
+                        Oil as needed<br><br>
+                        1. Peel the eggplants, then fry.<br>
+                        2. Fry the onions in the same pan with a little oil until they are completely golden.<br>
+                        4. Add the fried eggplants to the pan again.<br>
+                        5. Mix the eggplants with the other ingredients, then add half a cup of water to the pan and let it cook completely with the lid closed. After the eggplants are fully cooked, mash them with the back of a spoon.<br>
+                        6. Add chopped walnuts and curd to them.<br>
+                        7- Pour the eggplant curd in a serving dish and garnish it with curd, hot onion and hot mint.<br>
+                    </p>
+                </section>
+                <section class="section-right-dinner">
+                    <!-- <img src="./images/kashkeBademjan.jpg" alt="kashkeBademjan"> -->
+                </section>
+                </section>
+            </section>
+        </div> 
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p class="footer-p">address</p>
+        <div>
+            <img src="./images/facebookicon.png" alt="facebook">
+            <img src="./images/instagramicon.png" alt="instagram">
+            <img src="./images/twittericon.png" alt="twitter">
+            <!-- <i class="fab fa-instagram"></i>
+			<i class="fab fa-twitter"></i>
+			<i class="fab fa-facebook"></i> -->
+        </div>
+        <div class="address">alirezafakhriwebsite.com</div>
+    </footer>
+    <script src="scriptPersian.js"></script>    
+</body>
+</html>
